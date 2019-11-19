@@ -5,7 +5,7 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/colinmarc/hdfs/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -21,9 +21,9 @@ var (
 )
 
 var dfCmd = &cobra.Command{
-	Use:   "df [-h]",
-	Short: "concatenate HDFS files and print on the standard output",
-	RunE:  dfRun,
+	Use:                   "df [-h]",
+	Short:                 "concatenate HDFS files and print on the standard output",
+	RunE:                  dfRun,
 	DisableFlagsInUseLine: true,
 }
 

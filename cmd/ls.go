@@ -10,7 +10,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/colinmarc/hdfs/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -30,9 +30,9 @@ var (
 )
 
 var lsCmd = &cobra.Command{
-	Use:   "ls [-ahl] [FILE]...",
-	Short: "list HDFS directory contents",
-	RunE:  lsRun,
+	Use:                   "ls [-ahl] [FILE]...",
+	Short:                 "list HDFS directory contents",
+	RunE:                  lsRun,
 	DisableFlagsInUseLine: true,
 }
 

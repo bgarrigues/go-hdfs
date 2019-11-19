@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/colinmarc/hdfs/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -29,16 +29,16 @@ var (
 )
 
 var headCmd = &cobra.Command{
-	Use:   "head [-n LINES | -c BYTES] SOURCE...",
-	Short: "output the first part of HDFS files",
-	RunE:  headRun,
+	Use:                   "head [-n LINES | -c BYTES] SOURCE...",
+	Short:                 "output the first part of HDFS files",
+	RunE:                  headRun,
 	DisableFlagsInUseLine: true,
 }
 
 var tailCmd = &cobra.Command{
-	Use:   "tail [-n LINES | -c BYTES] SOURCE...",
-	Short: "output the last part of HDFS files",
-	RunE:  tailRun,
+	Use:                   "tail [-n LINES | -c BYTES] SOURCE...",
+	Short:                 "output the last part of HDFS files",
+	RunE:                  tailRun,
 	DisableFlagsInUseLine: true,
 }
 

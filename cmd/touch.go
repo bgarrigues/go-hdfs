@@ -21,9 +21,9 @@ var (
 )
 
 var touchCmd = &cobra.Command{
-	Use:   "touch [-c] FILE...",
-	Short: "create HDFS files and modify their timestamps",
-	RunE:  touchRun,
+	Use:                   "touch [-c] FILE...",
+	Short:                 "create HDFS files and modify their timestamps",
+	RunE:                  touchRun,
 	DisableFlagsInUseLine: true,
 }
 

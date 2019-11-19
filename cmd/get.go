@@ -14,9 +14,9 @@ func init() {
 }
 
 var getCmd = &cobra.Command{
-	Use:   "get SOURCE [LOCAL_DEST]",
-	Short: "get files from HDFS to the local filesystem",
-	RunE:  getRun,
+	Use:                   "get SOURCE [LOCAL_DEST]",
+	Short:                 "get files from HDFS to the local filesystem",
+	RunE:                  getRun,
 	DisableFlagsInUseLine: true,
 }
 

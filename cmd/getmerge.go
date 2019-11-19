@@ -19,9 +19,9 @@ var (
 )
 
 var getmergeCmd = &cobra.Command{
-	Use:   "getmerge SOURCE LOCAL_DEST",
-	Short: "get a directory from HDFS and merge the files into a single local file",
-	RunE:  getmergeRun,
+	Use:                   "getmerge SOURCE LOCAL_DEST",
+	Short:                 "get a directory from HDFS and merge the files into a single local file",
+	RunE:                  getmergeRun,
 	DisableFlagsInUseLine: true,
 }
 

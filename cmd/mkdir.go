@@ -16,9 +16,9 @@ var (
 )
 
 var mkdirCmd = &cobra.Command{
-	Use:   "mkdir [-p] FILE...",
-	Short: "make HDFS directories",
-	RunE:  mkdirRun,
+	Use:                   "mkdir [-p] FILE...",
+	Short:                 "make HDFS directories",
+	RunE:                  mkdirRun,
 	DisableFlagsInUseLine: true,
 }
 

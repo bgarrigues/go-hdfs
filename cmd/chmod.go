@@ -18,9 +18,9 @@ var (
 )
 
 var chmodCmd = &cobra.Command{
-	Use:   "chmod [-R] OCTAL-MODE FILE...",
-	Short: "change HDFS file mode bits",
-	RunE:  chmodRun,
+	Use:                   "chmod [-R] OCTAL-MODE FILE...",
+	Short:                 "change HDFS file mode bits",
+	RunE:                  chmodRun,
 	DisableFlagsInUseLine: true,
 }
 

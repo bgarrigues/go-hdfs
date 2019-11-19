@@ -19,9 +19,9 @@ var (
 )
 
 var rmCmd = &cobra.Command{
-	Use:   "rm [-rf] FILE...",
-	Short: "remove HDFS files or directories",
-	RunE:  rmRun,
+	Use:                   "rm [-rf] FILE...",
+	Short:                 "remove HDFS files or directories",
+	RunE:                  rmRun,
 	DisableFlagsInUseLine: true,
 }
 

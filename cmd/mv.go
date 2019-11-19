@@ -5,7 +5,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/colinmarc/hdfs/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -16,9 +16,9 @@ func init() {
 }
 
 var mvCmd = &cobra.Command{
-	Use:   "mv [-nT] SOURCE... DEST",
-	Short: "move HDFS files",
-	RunE:  mvRun,
+	Use:                   "mv [-nT] SOURCE... DEST",
+	Short:                 "move HDFS files",
+	RunE:                  mvRun,
 	DisableFlagsInUseLine: true,
 }
 

@@ -6,7 +6,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/colinmarc/hdfs/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -15,9 +15,9 @@ func init() {
 }
 
 var putCmd = &cobra.Command{
-	Use:   "put LOCAL_SOURCE DEST",
-	Short: "put files from local filesystem to HDFS",
-	RunE:  putRun,
+	Use:                   "put LOCAL_SOURCE DEST",
+	Short:                 "put files from local filesystem to HDFS",
+	RunE:                  putRun,
 	DisableFlagsInUseLine: true,
 }
 

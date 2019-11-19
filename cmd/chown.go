@@ -18,9 +18,9 @@ var (
 )
 
 var chownCmd = &cobra.Command{
-	Use:   "chown [-R] OWNER[:GROUP] FILE...",
-	Short: "change HDFS file owner and group",
-	RunE:  chownRun,
+	Use:                   "chown [-R] OWNER[:GROUP] FILE...",
+	Short:                 "change HDFS file owner and group",
+	RunE:                  chownRun,
 	DisableFlagsInUseLine: true,
 }
 

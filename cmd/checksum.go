@@ -12,9 +12,9 @@ func init() {
 }
 
 var checksumCmd = &cobra.Command{
-	Use:   "checksum FILE...",
-	Short: "calculate the checksum of the HDFS files",
-	RunE:  checksumRun,
+	Use:                   "checksum FILE...",
+	Short:                 "calculate the checksum of the HDFS files",
+	RunE:                  checksumRun,
 	DisableFlagsInUseLine: true,
 }
 

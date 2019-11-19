@@ -7,7 +7,7 @@ import (
 	"path"
 	"text/tabwriter"
 
-	"github.com/colinmarc/hdfs"
+	"github.com/colinmarc/hdfs/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -25,9 +25,9 @@ var (
 )
 
 var duCmd = &cobra.Command{
-	Use:   "du [-sh] FILE...",
-	Short: "estimate HDFS space usage",
-	RunE:  duRun,
+	Use:                   "du [-sh] FILE...",
+	Short:                 "estimate HDFS space usage",
+	RunE:                  duRun,
 	DisableFlagsInUseLine: true,
 }
 
