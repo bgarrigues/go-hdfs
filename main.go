@@ -1,6 +1,6 @@
 package main
 
-import "github.com/barakmich/go-hdfs/cmd/hdfs/cmd"
+import "github.com/bgarrigues/go-hdfs/cmd"
 
 var version string
 
